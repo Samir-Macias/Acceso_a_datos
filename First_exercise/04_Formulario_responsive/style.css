@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    
+    font-family: 'Segoe UI', sans-serif;
+}
+input, textarea, select, option {
+    font-family: 'Segoe-UI', sans-serif;
+    font-size: 1rem;
+    padding: 3px 8px;
+}
+form {
+    width: 100%;
+    max-width: 600px;
+    margin:auto;
+    background: #f5f5f5;
+    padding: 30px;
+    border: solid#eee 1px;
+}
+input, textarea, select {
+    width: 100%;
+    margin-bottom: 15px;
+}
+input[type='submit'] {
+    width: auto;
+    border: none;
+    background-color: forestgreen;
+    color:white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 6px 15px;
+    
+}
+input[type='submit']:hover {
+    background-color: rgb(74, 216, 74);
+    box-shadow: 0  3px 4px rgba(195, 194, 194, 0.932);
+}
+#boton {
+    text-align: right;
+}
+.fila{
+    display: flex;
+    gap: 20px;
+    align-items:center;
+}
+.columna1{
+    width: 60%;
+}
+.columna2{
+    width: 40%;
+}
+.habitacion{
+    display: flex;
+    gap: 30px;
+}
+.claseHabitaciones{
+    width: auto;
+}
+input[type='checkbox'] {
+    width: auto; 
+}

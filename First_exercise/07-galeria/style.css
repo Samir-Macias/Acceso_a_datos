@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    width: 300px;
+    height: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.image img{
+    border: 10px solid #060606;
+    object-fit: cover;
+    box-shadow: 0 4px 8px #777;
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+.content{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+}
+
+.image img:hover{
+    transform: scale(1.15) rotate(12deg);
+    transition: all 0.5s;
+}

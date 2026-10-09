@@ -1,0 +1,28 @@
+.image{
+    width: 26px;
+    height: 26px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #efefef;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pequeno{
+    width: 60px;
+}
+.mediano{
+    width: 200px;
+}
+.grande{
+    width: 100%;
+}
+table{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+textarea{
+    resize: none;
+}

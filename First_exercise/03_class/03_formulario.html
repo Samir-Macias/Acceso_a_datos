@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Formulario</title>
+</head>
+
+<body>
+  <header>
+    <h1>FORMULARIO HTML</h1>
+  </header>
+  <article>
+    <h2>Formulario de busqueda</h2>
+
+    <form action="http://www.google.es/search?tbm=isch&q=" method="get">
+      <input type="text" name="q" />
+      <input type="hidden" name="udm" value="2" />
+
+      <input class="image" type="image" src="../class_03/search-engine-optimization.png" />
+    </form>
+
+    <hr />
+    <h2>Tipos de inputs y propiedades</h2>
+    <form action="http://www.cursos-diseño.es/mostrar.php" method="get">
+      <table>
+        <tr>
+          <td>Primer apellido</td>
+          <td><input type="text" name="apellido" class="grande" /></td>
+        </tr>
+        <tr>
+          <td>Codigo postal</td>
+          <td>
+            <input type="text" name="cp" maxlength="5" minlength="5" class="pequeno" />
+          </td>
+        </tr>
+        <tr>
+          <td>Teléfono</td>
+          <td>
+            <input type="text" name="telefono" placeholder="+34 123 45 67 89" class="mediano" />
+          </td>
+        </tr>
+        <tr>
+          <td>Ciudad</td>
+          <td>
+            <input type="text" name="ciudad" class="mediano" value="Madrid" />
+          </td>
+        </tr>
+        <tr>
+          <td>Contraseña</td>
+          <td>
+            <input type="password" name="clave" id="clave" />
+            <input type="button" value="ver" onmousedown="document.getElementById('clave').type = 'text'"
+              onmouseup="document.getElementById('clave').type = 'password'" />
+          </td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input type="email" name="email" class="mediano"></td>
+        </tr>
+        <tr>
+          <td>Comentario</td>
+          <td><textarea name="Comentario" class="grande" rows="5"></textarea></td>
+        </tr>
+        <tr>
+          <td>Edad</td>
+          <td><input type="number" name="edad" class="pequeno" value="20" min="18" max="65"></td>
+        </tr>
+        <tr>
+          <td>Latas</td>
+          <td><input type="number" name="latas" min="6" value="12" step="6" class="pequeno"></td>
+        </tr>
+        <tr>
+          <td>Ingredientes</td>
+          <td>
+            <label>
+              <input type="checkbox" name="tomate" value="si">
+              Tomate
+            </label>
+            <label>
+              <input type="checkbox" name="alcaparras" value="si">
+              Alcaparras
+            </label>
+            <label>
+              <input type="checkbox" name="anchoa" value="si">
+              Anchoa
+          </td>
+          </label>
+        </tr>
+        <tr>
+          <td>Horario</td>
+          <td>
+            <input type="radio" name="horario" value="manana">Mañana
+            <input type="radio" name="horario" value="tarde">Tarde
+            <input type="radio" name="horario" value="noche">Noche
+            <input type="radio" name="horario" value="indiferente" checked>Indiferente
+          </td>
+        </tr>
+        <tr>
+          <td>Habitacion</td>
+          <td>
+            <select name="habitacion">
+              <option value="i1">Individual</option>
+              <option value="d2">Doble 2 camas</option>
+              <option value="d1">Doble Matrimonio</option>
+              <option value="t3">Triple 3 camas</option>
+              <option value="t2">Triple con matrimonio mas Individual</option>
+            </select>
+
+          </td>
+        </tr>
+        <tr>
+          <td>Fecha</td>
+          <td><input type="date" name="fecha"></td>
+        </tr>
+        <tr>
+          <td>Foto</td>
+          <td><input type="file" name="foto" accept="image/"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" value="comprobar" />
+            <input type="hidden" name="origen" value="pagina del Formulario">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </article>
+</body>
+
+</html>

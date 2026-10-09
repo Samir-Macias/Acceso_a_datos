@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    
+    font-family: 'Segoe UI', sans-serif;
+}
+input, textarea, select, option {
+    font-family: 'Segoe-UI', sans-serif;
+    font-size: 1rem;
+    padding: 3px 8px;
+}
+form {
+    width: 100%;
+    max-width: 600px;
+    margin:auto;
+    background: #f5f5f5;
+    padding: 30px;
+    border: solid#eee 1px;
+}
+input, textarea, select {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.fila{
+    display: flex;
+    gap: 20px;
+    align-items:center;
+}
+.columna1{
+    width: 60%;
+}
+.columna2{
+    width: 40%;
+}
+
+.colum1 {
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;
+    gap: 8px;   
+    width: 50%;             
+}
+.colum2{
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;
+    gap: 8px;   
+    width: 50%;   
+}
+
+
+.titulo-opciones {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+
+.opcion input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+input[type='checkbox'] {
+    width: auto; 
+    margin-top: 20px;
+    align-items: center;
+}
+input[type='submit'] {
+    width: auto;
+    border: none;
+    background-color: forestgreen;
+    color:white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 6px 15px;
+    
+}
+input[type='submit']:hover {
+    background-color: rgb(74, 216, 74);
+    box-shadow: 0  3px 4px rgba(195, 194, 194, 0.932);
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario Ejemplo</title>
+    <link rel="shortcut icon" href="../pruebas/2913988.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplo de Formulario</h1>
+    </header>
+    <article>
+        <form action="http://www.cursos-diseño.es/mostrar.php" method="post">
+
+            <div class="fila">
+                <div class="columna1">
+                    Nombre
+                    <input type="text" name="nombre">
+                </div>
+                <div class="columna2">
+                    Apellidos
+                    <input type="text" name="apellidos">
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="columna1">
+                    Calle
+                    <input type="text" name="calle">
+                </div>
+                <div class="columna2">
+                    Numero
+                    <input type="text">
+                </div>
+            </div>
+            <div class="fila">
+                <div class="columna2">
+                    CP
+                    <input type="text" name="cp" maxlength="5" minlength="5">
+                </div>
+                <div class="columna1">
+                    Poblacion
+                    <input type="text" name="poblacion">
+                </div>
+                <div class="columna3">
+                    Provincia
+                    <select name="provincia" required>
+                        <option value="" selected disabled>Elige una provincia</option>
+                        <option value="15">A Coruña</option>
+                        <option value="01">Álava</option>
+                        <option value="02">Albacete</option>
+                        <option value="03">Alicante</option>
+                        <option value="04">Almería</option>
+                        <option value="33">Asturias</option>
+                        <option value="05">Ávila</option>
+                        <option value="06">Badajoz</option>
+                        <option value="07">Islas Baleares</option>
+                        <option value="08">Barcelona</option>
+                        <option value="09">Burgos</option>
+                        <option value="10">Cáceres</option>
+                        <option value="11">Cádiz</option>
+                        <option value="39">Cantabria</option>
+                        <option value="12">Castellón</option>
+                        <option value="13">Ciudad Real</option>
+                        <option value="14">Córdoba</option>
+                        <option value="16">Cuenca</option>
+                        <option value="17">Girona</option>
+                        <option value="18">Granada</option>
+                        <option value="19">Guadalajara</option>
+                        <option value="20">Guipúzcoa</option>
+                        <option value="21">Huelva</option>
+                        <option value="22">Huesca</option>
+                        <option value="23">Jaén</option>
+                        <option value="26">La Rioja</option>
+                        <option value="35">Las Palmas</option>
+                        <option value="24">León</option>
+                        <option value="25">Lleida</option>
+                        <option value="27">Lugo</option>
+                        <option value="28">Madrid</option>
+                        <option value="29">Málaga</option>
+                        <option value="30">Murcia</option>
+                        <option value="31">Navarra</option>
+                        <option value="32">Ourense</option>
+                        <option value="34">Palencia</option>
+                        <option value="36">Pontevedra</option>
+                        <option value="37">Salamanca</option>
+                        <option value="38">Santa Cruz de Tenerife</option>
+                        <option value="40">Segovia</option>
+                        <option value="41">Sevilla</option>
+                        <option value="42">Soria</option>
+                        <option value="43">Tarragona</option>
+                        <option value="44">Teruel</option>
+                        <option value="45">Toledo</option>
+                        <option value="46">Valencia</option>
+                        <option value="47">Valladolid</option>
+                        <option value="48">Vizcaya</option>
+                        <option value="49">Zamora</option>
+                        <option value="50">Zaragoza</option>
+                    </select>
+                </div>
+            </div>
+
+            
+                <div class="columna1">
+                    Email
+                    <input type="email" name="email">
+                </div>
+                <div class="columna2">
+                    Teléfono
+                    <input type="text" name="telefono" maxlength="9" minlength="9">
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="colum1">
+                    <span class="titulo-opciones">Inglés</span>
+                    
+                    <label class="opcion">
+                        <input type="radio" name="ingles" value="basico"> Basico
+                    </label>
+                    
+                    <label class="opcion">
+                        <input type="radio" name="ingles" value="medio"> Medio
+                    </label>
+                    
+                    <label class="opcion">
+                        <input type="radio" name="ingles" value="avanzado"> Avanzado
+                    </label>
+                </div>
+                
+                <div class="colum2">
+                    <span class="titulo-opciones">Disponibilidad</span>
+                    
+                    <label class="opcion">
+                        <input type="radio" name="disponibilidad" value="morning"> Mañana
+                    </label>
+                    
+                    <label class="opcion">
+                        <input type="radio" name="disponibilidad" value="tardes"> Tarde
+                    </label>
+                    
+                    <label class="opcion">
+                        <input type="radio" name="disponibilidad" value="ambas"> Ambas
+                    </label>
+                </div>
+            </div>
+            
+
+            <label>
+                <input type="checkbox" name="terminosyCondiciones" value="si" required>
+            *Acepto los 
+            </label>
+           <a href="../05_formularioEjemplo/terminosyCondiciones.html" target="_blank">Terminos y Condiciones</a> 
+            <br>
+            <input type="submit">
+
+
+        </form>
+    </article>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>EJEMPLO MAQUETACION</title>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header-rotulo">
+            <h1>EJEMPLO MAQUETACION</h1>
+        </header>
+        <main class="main-layout">
+            <section class="main-content">
+                <h2 class="title-content">Titulo de formulario</h2>
+                <p class="description-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate praesentium
+                    suscipit, facere earum illum quidem minus consectetur quae nemo repudiandae sit iste blanditiis
+                    harum labore eveniet reprehenderit maiores, est vel?
+                    Doloremque fugiat praesentium repellendus dolores repellat beatae natus itaque velit saepe ducimus
+                    quae soluta fuga minima facilis a illo, qui nobis maxime! Laboriosam vero repudiandae eos. Facere
+                    vero harum quia!
+                    Obcaecati fuga expedita similique magni omnis eveniet excepturi nemo accusamus voluptatem iure
+                    maiores in unde eius ut qui quidem totam nihil voluptates, odit beatae quos eum! Ab facere nam
+                    voluptate.
+                </p>
+
+                <form action="http://www.cursos-diseño.es/mostrar.php" method="post">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" placeholder="Introduce tu nombre" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" placeholder="Introduce tu apellido" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="ejemplo@correo.com" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" name="telefono" placeholder="600 000 000" maxlength="9"/>
+                        </div>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="condiciones" name="condiciones" required />
+                        <label for="condiciones">Acepto Condiciones</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">ENVIAR</button>
+                </form>
+            </section>
+            <aside class="sidebar">
+                <div class="anuncio-box">
+                    <img src="../pruebas/anuncio.gif" alt="Anuncio">
+                </div>
+
+                <form class="search-wrap" action="https://www.google.com/search" method="get" target="_blank">
+                    <div class="search-container">
+                        <input type="text" name="q" class="search-input" placeholder="Buscar..." aria-label="Buscar" required />
+                        <button type="submit" class="search-button" aria-label="Buscar">
+                            <img src="../pruebas/lupa.png" alt="" class="search-icon" />
+                        </button>
+                    </div>
+                </form>
+            </aside>
+        </main>
+    </div>
+
+</body>
+
+</html>
